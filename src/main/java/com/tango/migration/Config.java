@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
     @Bean
-    public String userName(@Value("${user.name}") String userName) {
+    public String userName(@Value("${name}") String userName) {
         return userName;
     }
 }
