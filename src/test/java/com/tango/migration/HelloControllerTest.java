@@ -33,14 +33,14 @@ public class HelloControllerTest {
     }
 
     @Test
-    public void request_hello_shouldSuccess() throws Exception {
+    public void hello_요청시에_hello_tango_반환되어야함() throws Exception {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("hello tango"));
     }
 
     @Test
-    public void request_view_shouldSuccess() throws Exception {
+    public void index_요청시에_index_jsp_반환되어야함() throws Exception {
         mockMvc.perform(get("/index"))
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.forwardedUrl("/WEB-INF/views/index.jsp"));
