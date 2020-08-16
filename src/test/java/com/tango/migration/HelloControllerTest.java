@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = {AppConfig.class, WebMvcConfig.class})
+@ContextConfiguration(classes = {WebInit.class, AppConfig.class})
 @WebAppConfiguration
 public class HelloControllerTest {
 
