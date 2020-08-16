@@ -6,7 +6,7 @@
 </head>
 <body>
 <div>
-hello
+hello ${userName}
 </div>
 </body>
 </html>
